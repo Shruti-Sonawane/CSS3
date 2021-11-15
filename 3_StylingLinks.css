@@ -1,0 +1,29 @@
+#topbar{
+  background-color: lightblue;
+  margin: 0;
+  padding:24px 48px;
+}
+
+.menu-items{
+  font-size: 26px;
+  margin-right: 24px;
+  color: black;
+  text-decoration: none;
+
+}
+
+.menu-items:link{
+  color: blue;
+}
+
+.menu-items:visited{
+  color: green;
+}
+
+.menu-items:hover{
+  color: red;
+}
+
+.menu-items:active{
+  color: purple;
+}

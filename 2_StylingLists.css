@@ -1,0 +1,10 @@
+ #ordered{
+  list-style-type: upper-alpha;
+  width:500px;
+  list-style-position: inside;
+}
+
+#unordered{
+  list-style-type: square;
+  
+}
