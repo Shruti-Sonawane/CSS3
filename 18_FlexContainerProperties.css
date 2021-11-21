@@ -1,0 +1,50 @@
+body{
+  margin:0;
+}
+
+#container{
+  width:100vw;
+  height:700px;
+  background-color: lightblue;
+  box-sizing: border-box;
+  padding: 32px;
+  display: flex;
+  flex-direction: row; /*default */
+/*  flex-direction: row-reverse; */
+/*  flex-direction: column; */
+/*  flex-direction: column-reverse; */
+/*  justify-content: center; */
+    flex-wrap: wrap;  /*If value is overflowing */
+/*  align-items: center; */
+    align-content: center;
+  /*  align-content: flex-end; */
+}
+
+.item{
+  background-color: lightcoral;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  padding: 32px;
+  font-size: 24px;
+  text-align: center;
+  flex-basis: 120px;
+  /*flex-grow: 1;*/
+}
+
+
+/*
+.item:nth-child(2){
+  background-color: bisque;
+  order: 1;  /* -1= start and 1= end */
+/*  flex-grow: 0;
+    flex-shrink: 2; */
+/*  flex-grow: 2; */
+
+
+
+
+/* If we want 2nd and 4th element have different align value */
+.item:nth-child(even) {
+  background-color: bisque;
+  align-self: center;
+}
