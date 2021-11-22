@@ -1,0 +1,33 @@
+div{
+  width: 300px;
+  height: 300px;
+  margin: 48px;
+  border: 1px solid black;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: 3; /* how many times should it iterate */
+  animation-direction: alternate; /* blue to coral ...and then coral to blue*/
+  animation-timing-function: ease-in;  /* start slowly then go faster */
+  animation-fill-mode: forwards; /* to stay in last state of animation */
+
+
+/*Short hand */
+/*  animation: pulse 3s ease-in infinite; */
+
+}
+
+@keyframes pulse {
+  0%{
+    background-color: lightblue;
+    transform: rotateZ(0deg);
+  }
+
+  100%{
+    background-color: lightcoral;
+    transform: rotateZ(180deg);
+  }
+}
+
+div:hover{
+  animation-play-state: paused;
+}
